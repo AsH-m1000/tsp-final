@@ -18,7 +18,7 @@ const Login = () => {
     setError("");
     try {
       await logIn(email, password);
-      navigate("/home");
+      navigate("/main");
     } catch (err) {
       setError(err.message);
     }
@@ -28,7 +28,7 @@ const Login = () => {
     e.preventDefault();
     try {
       await googleSignIn();
-      navigate("/home");
+      navigate("/main");
     } catch (error) {
       console.log(error.message);
     }

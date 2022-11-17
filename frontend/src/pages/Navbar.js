@@ -20,10 +20,19 @@ const Navbar = () => {
   return (
     <>
       <section className="navbar-bg">
-        <nav class="navbar navbar-expand-lg navbar-light ">
+        <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container">
-            <a class="navbar-brand" href="#">
-              TopSecretProject
+            {/* <img src="../public/logo192.png" /> */}
+            <img
+              src="https://m.media-amazon.com/images/I/71Pvn-uqc7L._SL1080_.jpg"
+              style={{ width: 100, height: 100 }}
+            />
+            <a
+              class="navbar-brand"
+              href="#"
+              style={{ fontWeight: 1000, fontSize: 50 }}
+            >
+              KRSMSO
             </a>
             <button
               class="navbar-toggler"

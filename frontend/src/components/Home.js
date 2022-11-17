@@ -10,6 +10,7 @@ const Home = () => {
   return (
     <>
       <Navbars />
+      <hr />
       <Header />
       <HowItWorks />
       <Aboutus />

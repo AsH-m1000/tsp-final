@@ -7,9 +7,30 @@
   align-items: center;
   height: 100vh;
 } */
+/* 
+.loading center {
+  background-color: "\";
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 10%;
+  width: 20% !important;
+  height: 40vh !important;
+} */
+
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250vh;
+  height: 100vh;
+  background-color: "#f1f5fd";
+  margin-left: -20%;
+}
 
 .box {
-  /* border: 1px solid #dfdfdf; */
   border: 1px solid black;
   border-radius: 5px;
   margin-top: 20rem;
