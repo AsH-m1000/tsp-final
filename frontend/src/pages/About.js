@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import howToUseApp from "../API/howToUse";
+import logo1 from "../images/hero1.jpg";
+import logo2 from "../images/hero2.jpg";
 
 const Aboutus = () => {
   const [aboutData, setAboutData] = useState(howToUseApp);
@@ -9,7 +11,7 @@ const Aboutus = () => {
         <div className="container mb-5">
           <div className="row">
             <div className="col-12 col-lg-5 text-center our-service-leftside-img">
-              <img src="./images/hero3.jpg" alt="aboutusIMg" />
+              <img src={logo1} style={{ width: "50rem" }} />
             </div>
             {/* 1section right side data  */}
             <div className="col-12 col-lg-7 our-services-list">
@@ -72,7 +74,7 @@ const Aboutus = () => {
 
             {/* images section  */}
             <div className="col-12 col-lg-5  our-service-rightside-img">
-              <img src="./images/hero.jpg" alt="aboutusIMg" />
+              <img src={logo2} alt="aboutusIMg" style={{ width: "50rem" }} />
             </div>
           </div>
         </div>
