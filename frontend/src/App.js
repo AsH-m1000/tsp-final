@@ -13,33 +13,12 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import PacmanLoader from "react-spinners/PacmanLoader";
 
 function App() {
-  const [loading, setLoading] = useState(false);
-
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 4000);
-  }, []);
-
   return (
     <UserAuthContextProvider>
-      {loading ? (
-        <div className="App">
-          <PacmanLoader color="black" loading={loading} size={30} />
-        </div>
-      ) : (
-        <Routes>
-          {/* <Route
-          path="/main"
-          element={
-            <ProtectedRoute>
-              <Home />
-            </ProtectedRoute>
-          }
-        /> */}
-          <Route path="/" element={<Login />} />
-          <Route path="/main" element={<Home />} />
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route element={<ProtectedRoute />}>
+          <Route path="/main" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/contact" element={<ContactUs />}></Route>
           <Route path="/phonesignup" element={<PhoneSignUp />} />
@@ -47,8 +26,8 @@ function App() {
           <Route path="*" element={<Error404 />}></Route>
 
           <Route path="/sevices" element={<SignIn />}></Route>
-        </Routes>
-      )}
+        </Route>
+      </Routes>
     </UserAuthContextProvider>
   );
 }

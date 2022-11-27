@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Payment from "./Payment";
 import { Button } from "react-bootstrap";
-
+import logo3 from "../images/hero3.jpg";
 const Contact = () => {
   const [userData, setUserData] = useState({
     firstName: "",
@@ -78,11 +78,7 @@ const Contact = () => {
                     Deserunt eaque alias similique.
                   </p>
                   <figure>
-                    <img
-                      src="./images/hero1.jpg"
-                      alt="contatUsImg"
-                      className="img-fluid"
-                    />
+                    <img src={logo3} alt="contatUsImg" className="img-fluid" />
                   </figure>
                 </div>
 

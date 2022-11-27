@@ -25,7 +25,11 @@ const Navbar = () => {
             {/* <img src="../public/logo192.png" /> */}
             <img
               src="https://m.media-amazon.com/images/I/71Pvn-uqc7L._SL1080_.jpg"
-              style={{ width: 100, height: 100 }}
+              style={{
+                width: 100,
+                height: 100,
+                borderRadius: "50%",
+              }}
             />
             <a
               class="navbar-brand"
