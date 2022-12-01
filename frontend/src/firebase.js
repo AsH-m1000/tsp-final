@@ -6,14 +6,13 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDlWYRbiLGZx0JWbtG6MTo5d7o0XqRF8yk",
-  authDomain: "project-s-e7e24.firebaseapp.com",
-  databaseURL: "https://project-s-e7e24-default-rtdb.firebaseio.com",
-  projectId: "project-s-e7e24",
-  storageBucket: "project-s-e7e24.appspot.com",
-  messagingSenderId: "1003768574770",
-  appId: "1:1003768574770:web:bf32e096a58aacec869d2b",
-  measurementId: "G-STGQVX943Q",
+  apiKey: "AIzaSyCKfv1JrxMT8UdDZ0xMOAZ2z9kUmuJxdEQ",
+  authDomain: "tspf-29098.firebaseapp.com",
+  databaseURL: "https://tspf-29098-default-rtdb.firebaseio.com",
+  projectId: "tspf-29098",
+  storageBucket: "tspf-29098.appspot.com",
+  messagingSenderId: "797254104224",
+  appId: "1:797254104224:web:bd8dd11496d0667dc145c5",
 };
 
 // Initialize Firebase

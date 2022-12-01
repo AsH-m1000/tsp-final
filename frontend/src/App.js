@@ -8,25 +8,28 @@ import ContactUs from "./pages/smallComponents/ContactUs";
 import Error404 from "./pages/Error";
 import Signup from "./components/Signup";
 import SignIn from "./pages/Sevices";
-import { useEffect, useState } from "react";
-import ProtectedRoute from "./components/ProtectedRoute";
-import PacmanLoader from "react-spinners/PacmanLoader";
+// import { useEffect, useState } from "react";
+// import ProtectedRoute from "./components/ProtectedRoute";
+// import PacmanLoader from "react-spinners/PacmanLoader";
+import Protected from "./pages/Protected";
 
 function App() {
   return (
     <UserAuthContextProvider>
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route element={<ProtectedRoute />}>
-          <Route path="/main" element={<Home />}></Route>
-          <Route path="/about" element={<About />}></Route>
-          <Route path="/contact" element={<ContactUs />}></Route>
-          <Route path="/phonesignup" element={<PhoneSignUp />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="*" element={<Error404 />}></Route>
 
-          <Route path="/sevices" element={<SignIn />}></Route>
-        </Route>
+        <Route path="/phonesignup" element={<PhoneSignUp />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/main" element={<Protected Components={Home} />}></Route>
+        <Route path="/about" element={<Protected Components={About} />}></Route>
+        <Route
+          path="/contact"
+          element={<Protected Components={ContactUs} />}
+        ></Route>
+        <Route path="*" element={<Error404 />}></Route>
+
+        <Route path="/sevices" element={<SignIn />}></Route>
       </Routes>
     </UserAuthContextProvider>
   );
